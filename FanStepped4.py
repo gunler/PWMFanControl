@@ -33,9 +33,9 @@ while 1:                                     # Execute loop forever
     elif temp > 40:
         fan.ChangeDutyCycle(50)
     elif temp > 32:
-        fan.ChangeDutyCycle(25)
+        fan.ChangeDutyCycle(35)
     elif temp > 25:
-        fan.ChangeDutyCycle(15)
+        fan.ChangeDutyCycle(0)
     else:
         fan.ChangeDutyCycle(0)
     time.sleep(5)                            # Sleep for 5 seconds
